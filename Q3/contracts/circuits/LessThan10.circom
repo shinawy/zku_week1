@@ -6,10 +6,10 @@ template LessThan10() {
     signal input in;
     signal output out;
 
-    component lt = LessThan(32); 
+    component lt = LessThan(32); // 11111 1000 -> 10000    1010
 
     lt.in[0] <== in;
     lt.in[1] <== 10;
-
+    
     out <== lt.out;
 }
